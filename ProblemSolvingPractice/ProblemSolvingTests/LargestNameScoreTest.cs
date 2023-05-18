@@ -22,5 +22,17 @@ namespace ProblemSolvingTests
 
             Assert.That(total, Is.EqualTo(expected));
         }
+
+        [Test]
+        public void Is_List_Sorted_Test()
+        {
+            List<string> list = test.ReadInFile("Files/names.txt");
+            string name = list[937];
+            string expected = "COLIN";
+
+            long total = test.CalculateNameScore(name);
+
+            Assert.That(name, Is.EqualTo(expected));
+        }
     }
 }

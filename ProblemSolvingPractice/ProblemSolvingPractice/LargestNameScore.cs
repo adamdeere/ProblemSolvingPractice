@@ -4,23 +4,29 @@
     {
         public long CalculateResults()
         {
+            long result = 0;
             List<string> results = ReadInFile("Files/names.txt");
-            results.Sort();
-
             for (int i = 0; i < results.Count; i++)
             {
-                long nameScore = CalculateNameScore("COLIN");
+                long nameScore = CalculateNameScore(results[i]);
+                int index = i + 1;
+                if (i >= results.Count)
+                {
+                    index--;
+                }
+                result += nameScore * index;
             }
-            return 0;
+            return result;
         }
 
-        private List<string> ReadInFile(string fileName)
+        public List<string> ReadInFile(string fileName)
         {
             // Open the text file using a stream reader.
             using var sr = new StreamReader(fileName);
             string line = sr.ReadToEnd();
-
-            return line.Split(new char[] { ',', '\"', '"' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+            List<string> results = line.Split(new char[] { ',', '\"', '"' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+            results.Sort();
+            return results;
         }
 
         public long CalculateNameScore(string name)
