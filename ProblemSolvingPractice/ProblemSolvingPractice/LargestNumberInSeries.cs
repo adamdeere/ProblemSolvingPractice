@@ -4,9 +4,32 @@
     {
         public long CalculateResults(int step)
         {
+            long result = 0;
             char[] numbers = ReadInFile("Files/numberSeries.txt");
-            return 0;
-           
+            if (numbers[0] != 'E')
+            {
+                for (int i = 0; i < numbers.Length; i++)
+                {
+                    int start = i;
+                    int end = i + step - 1;
+                    if (start != numbers.Length && end <= numbers.Length - 1)
+                    {
+                        long currentTotal = 1;
+                        for (int j = start; j <= end; j++)
+                        {
+                            long current = long.Parse(numbers[j].ToString());
+                            currentTotal *= current;
+                        }
+
+                        if (currentTotal > result)
+                        {
+                            result = currentTotal;
+                        }
+                    }
+                }
+            }
+
+            return result;
         }
 
         public char[] ReadInFile(string fileName)
@@ -20,11 +43,6 @@
 
                 for (int i = 0; i < numberSeries.Count; i++)
                 {
-                    if (i == 50)
-                    {
-                        int y = 0;
-                        y++;
-                    }
                     char f = numberSeries[i];
                     if (numberSeries[i] == '\r' || numberSeries[i] == '\n')
                     {
@@ -33,7 +51,6 @@
                     }
                 }
                 return numberSeries.ToArray();
-               
             }
             catch (IOException e)
             {

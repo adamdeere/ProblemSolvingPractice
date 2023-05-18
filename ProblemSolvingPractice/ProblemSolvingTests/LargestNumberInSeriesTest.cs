@@ -4,11 +4,22 @@ namespace ProblemSolvingTests
 {
     public class LargestNumberInSeriesTest
     {
-        ICalculateProduct test;
+        private ICalculateProduct test;
+
         [SetUp]
         public void Setup()
         {
-           test = new LargestNumberInSeries();
+            test = new LargestNumberInSeries();
+        }
+
+        [Test]
+        public void Find_Largest_Product_Test()
+        {
+            int expected = 5832;
+            int step = 4;
+            long result = test.CalculateResults(step);
+
+            Assert.That(result, Is.EqualTo(expected));
         }
 
         [Test]
