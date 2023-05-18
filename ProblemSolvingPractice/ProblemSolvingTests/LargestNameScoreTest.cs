@@ -1,12 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NUnit.Framework.Internal;
 
 namespace ProblemSolvingTests
 {
-    internal class LargestNameScoreTest
+    public class LargestNameScoreTest
     {
+        private ICalulateNameResults test;
+
+        [SetUp]
+        public void Setup()
+        {
+            test = new LargestNameScore();
+        }
+
+        [Test]
+        public void Calculate_Name_Score_Test()
+        {
+            string name = "COLIN";
+            long expected = 53;
+
+            long total = test.CalculateNameScore(name);
+
+            Assert.That(total, Is.EqualTo(expected));
+        }
     }
 }
