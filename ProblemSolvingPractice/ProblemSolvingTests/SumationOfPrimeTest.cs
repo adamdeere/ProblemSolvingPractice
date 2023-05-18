@@ -4,7 +4,7 @@ namespace ProblemSolvingTests
 {
     public class SumationOfPrimeTest
     {
-        private ICalculateResults CalculateResults;
+        private ICalulateLargeResults CalculateResults;
 
         [SetUp]
         public void Setup()
@@ -31,12 +31,56 @@ namespace ProblemSolvingTests
         }
 
         [Test]
-        public void Calculate_Prime_Numbers_Test()
+        public void Calculate_Prime_Numbers_Test_Low()
         {
             int expected = 17;
             int range = 10;
 
-            int result = CalculateResults.CalculateResults(range);
+            long result = CalculateResults.CalculateResults(range);
+
+            Assert.That(result, Is.EqualTo(expected));
+        }
+
+        [Test]
+        public void Calculate_Prime_Numbers_Test_Medium()
+        {
+            int expected = 41;
+            int range = 17;
+
+            long result = CalculateResults.CalculateResults(range);
+
+            Assert.That(result, Is.EqualTo(expected));
+        }
+
+        [Test]
+        public void Calculate_Prime_Numbers_Test_Middle()
+        {
+            int expected = 277050;
+            int range = 2001;
+
+            long result = CalculateResults.CalculateResults(range);
+
+            Assert.That(result, Is.EqualTo(expected));
+        }
+
+        [Test]
+        public void Calculate_Prime_Numbers_Test_High()
+        {
+            int expected = 873608362;
+            int range = 140759;
+
+            long result = CalculateResults.CalculateResults(range);
+
+            Assert.That(result, Is.EqualTo(expected));
+        }
+
+        [Test]
+        public void Calculate_Prime_Numbers_Test_Last()
+        {
+            long expected = 142913828922;
+            int range = 2000000;
+
+            long result = CalculateResults.CalculateResults(range);
 
             Assert.That(result, Is.EqualTo(expected));
         }

@@ -4,4 +4,9 @@
     {
         int CalculateResults(int range);
     }
+
+    public interface ICalulateLargeResults
+    {
+        long CalculateResults(int range);
+    }
 }
