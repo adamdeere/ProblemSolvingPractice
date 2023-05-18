@@ -1,1 +1,1 @@
-# ProblemSolvingPractice
+# Problem-Solving-Practice
