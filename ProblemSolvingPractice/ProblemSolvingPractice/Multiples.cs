@@ -4,6 +4,8 @@
     {
         public int CalculateResults(int range)
         {
+
+
             int total = 0;
             if (range > 0)
             {
