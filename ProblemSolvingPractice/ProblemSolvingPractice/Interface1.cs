@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProblemSolvingPractice
+﻿namespace ProblemSolvingPractice
 {
-    internal interface Interface1
+    public interface ICalculateResults
     {
+        int CalculateResults(int range);
     }
 }

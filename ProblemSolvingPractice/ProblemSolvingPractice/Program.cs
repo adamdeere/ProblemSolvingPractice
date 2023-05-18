@@ -4,8 +4,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Multiples m = new Multiples();
-        int result = m.CalculateMultiples(1000);
+        int range = 2000000;
+        ICalculateResults m = new SumationOfPrimes();
+        int result = m.CalculateResults(range);
         Console.WriteLine(result);
         Console.ReadLine();
     }

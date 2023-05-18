@@ -2,7 +2,7 @@ namespace ProblemSolvingTests
 {
     public class CalculateMultiplesTests
     {
-        private Multiples test;
+        private ICalculateResults test;
 
         [SetUp]
         public void Setup()
@@ -16,7 +16,7 @@ namespace ProblemSolvingTests
             int range = 10;
             int expected = 23;
 
-            int total = test.CalculateMultiples(range);
+            int total = test.CalculateResults(range);
 
             Assert.That(total, Is.EqualTo(expected));
         }
