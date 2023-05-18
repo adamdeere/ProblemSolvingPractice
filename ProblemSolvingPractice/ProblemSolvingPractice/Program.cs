@@ -1,12 +1,12 @@
-﻿using System;
+﻿using ProblemSolvingPractice;
 
-namespace ProblemSolvingPractice
+internal class Program
 {
-    class Program
+    private static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        Multiples m = new Multiples();
+        int result = m.CalculateMultiples(1000);
+        Console.WriteLine(result);
+        Console.ReadLine();
     }
 }
