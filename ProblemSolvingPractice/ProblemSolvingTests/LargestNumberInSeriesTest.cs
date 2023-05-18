@@ -4,21 +4,21 @@ namespace ProblemSolvingTests
 {
     public class LargestNumberInSeriesTest
     {
+        ICalculateProduct test;
         [SetUp]
         public void Setup()
         {
-           
+           test = new LargestNumberInSeries();
         }
 
         [Test]
-        public void Calculate_Multiples_Test()
+        public void Read_In_File_Test()
         {
-            int range = 4;
-            int expected = 5832;
+            int expected = 1000;
 
-            int total = 0;
+            char[] testArray = test.ReadInFile("Files/numberSeries.txt");
 
-            Assert.That(total, Is.EqualTo(expected));
+            Assert.That(testArray, Has.Length.EqualTo(expected));
         }
     }
 }
