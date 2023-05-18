@@ -5,8 +5,8 @@ internal class Program
     private static void Main(string[] args)
     {
         int range = 13;
-        ICalculateProduct m = new LargestNumberInSeries();
-        long result = m.CalculateResults(range);
+        ICalulateNameResults m = new LargestNameScore();
+        long result = m.CalculateResults();
         Console.WriteLine("The result is : " + result);
         Console.ReadLine();
     }

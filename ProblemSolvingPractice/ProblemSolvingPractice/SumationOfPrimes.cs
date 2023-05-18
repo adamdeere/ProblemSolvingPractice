@@ -4,6 +4,11 @@
     //  Find the sum of all the primes below two million.
     public class SumationOfPrimes : ICalulateLargeResults
     {
+        public long CalculateNameScore(string name)
+        {
+            throw new NotImplementedException();
+        }
+
         public long CalculateResults(int range)
         {
             //The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.

@@ -16,4 +16,13 @@
 
         long CalculateResults(int step);
     }
+
+    public interface ICalulateNameResults
+    {
+        long CalculateResults();
+
+        long CalculateNameScore(string name);
+
+        List<string> ReadInFile(string fileName);
+    }
 }
