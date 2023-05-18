@@ -5,6 +5,7 @@ namespace ProblemSolvingTests
     public class SumationOfPrimeTest
     {
         private ICalculateResults CalculateResults;
+
         [SetUp]
         public void Setup()
         {
@@ -14,10 +15,12 @@ namespace ProblemSolvingTests
         [Test]
         public void Is_Number_A_Prime_Test()
         {
-            bool result = Utils.IsPrime(19);
+            int range = 19;
+            bool result = Utils.IsPrime(range);
 
             Assert.That(result, Is.True);
         }
+
         [Test]
         public void Is_Number_A_Prime_Test_Edge_Case()
         {
