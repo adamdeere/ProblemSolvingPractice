@@ -1,9 +1,4 @@
 ﻿using NUnit.Framework.Internal;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProblemSolvingTests
 {
@@ -12,7 +7,6 @@ namespace ProblemSolvingTests
         [SetUp]
         public void Setup()
         {
-           
         }
 
         [Test]

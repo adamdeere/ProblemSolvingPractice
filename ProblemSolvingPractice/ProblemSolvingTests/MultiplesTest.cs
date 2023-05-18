@@ -2,7 +2,8 @@ namespace ProblemSolvingTests
 {
     public class CalculateMultiplesTests
     {
-        Multiples test;
+        private Multiples test;
+
         [SetUp]
         public void Setup()
         {
