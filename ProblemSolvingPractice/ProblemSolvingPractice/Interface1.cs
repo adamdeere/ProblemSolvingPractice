@@ -25,4 +25,11 @@
 
         List<string> ReadInFile(string fileName);
     }
+
+    public interface ICalculateFactorial
+    {
+        long CalculateResults(int range);
+
+        long CalculateProduct(int range);
+    }
 }

@@ -4,9 +4,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        int range = 13;
-        ICalulateNameResults m = new LargestNameScore();
-        long result = m.CalculateResults();
+        int range = 10;
+        ICalculateFactorial m = new FactorialDigitSum();
+        long result = m.CalculateResults(range);
         Console.WriteLine("The result is : " + result);
         Console.ReadLine();
     }
