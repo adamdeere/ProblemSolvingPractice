@@ -6,12 +6,14 @@ namespace ProblemSolvingPractice
     {
         public long CalculateProduct(int range)
         {
+              var factorialExpression = string.Join("*", Enumerable.Range(1, range));
+            factorialExpression.Reverse();
             long total = range * (range - 1);
-            range = range - 2;
-            int inital = range;
+            range -= 2;
+          
             while (range != 1)
             {
-                total = total * range;
+                total *= range;
                 range--;
             }
             
@@ -20,7 +22,18 @@ namespace ProblemSolvingPractice
 
         public long CalculateResults(int range)
         {
-            return CalculateProduct(range);
+            long product = CalculateProduct(range);
+
+            char[] charArray = product.ToString().ToCharArray();
+
+            long total = 0;
+
+            for (int i = 0; i < charArray.Length; i++)
+            {
+                long y = long.Parse(charArray[i].ToString());
+                total += y;
+            }
+            return total;
         }
     }
 }
