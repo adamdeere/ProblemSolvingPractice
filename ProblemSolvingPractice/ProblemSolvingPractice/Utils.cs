@@ -1,4 +1,6 @@
-﻿namespace ProblemSolvingPractice
+﻿using System.Collections;
+
+namespace ProblemSolvingPractice
 {
     public class Utils
     {
@@ -15,6 +17,26 @@
                     return false;
 
             return true;
+        }
+
+        public static void Multiply(int x, ArrayList v)
+        {
+            int carry = 0;
+            int size = v.Count;
+            for (int i = 0; i < size; i++)
+            {
+                // Calculate res + prev carry
+                int res = carry + (int)v[i] * x;
+
+                // updation at ith position
+                v[i] = res % 10;
+                carry = res / 10;
+            }
+            while (carry != 0)
+            {
+                v.Add(carry % 10);
+                carry /= 10;
+            }
         }
     }
 }
