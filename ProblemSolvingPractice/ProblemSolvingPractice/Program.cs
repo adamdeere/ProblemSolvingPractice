@@ -1,14 +1,44 @@
-﻿using ProblemSolvingPractice;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using ProblemSolvingPractice;
+using ProblemSolvingPractice.DataObjects;
 using System;
 using System.Collections;
 internal class Program
 {
-    static ArrayList v = new ArrayList();
-   
-
-    private static void Main(string[] args)
+    private static async Task Main(string[] args)
     {
-       
+        string url = "https://jsonplaceholder.typicode.com/posts";
+        HttpClient client = new HttpClient();
+
+        try
+        {
+            var response = await client.GetAsync(url);
+            var responseMessage = await response.Content.ReadAsStringAsync();
+
+            var comments = JsonConvert.DeserializeObject<Posts[]>(responseMessage);
+          
+            if (comments != null)
+            {
+                Array.Reverse(comments);
+               
+                Array.Sort(comments, (a, b) => (a.CompareTo(b)));
+                foreach (var item in comments)
+                {
+                    Console.WriteLine(item.UserId  + " " + item.Title);
+                }
+            }
+            
+        }
+        catch (Exception e)
+        {
+
+           Console.WriteLine(e.Message);
+        }
+        finally
+        {
+            client.Dispose();
+        }
         FactorialDigitSum m = new FactorialDigitSum();
         int n = 100;
         Console.WriteLine(m.FindSumOfDigits(n));
