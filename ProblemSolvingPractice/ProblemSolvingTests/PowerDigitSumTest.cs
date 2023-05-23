@@ -22,15 +22,15 @@ namespace ProblemSolvingTests
             Assert.That(total, Is.EqualTo(expected));
         }
 
-        //[Test]
-        //public void Calculate_Total_Sum_Test()
-        //{
-        //    int range = 15;
-        //    long expected = 26;
+        [Test]
+        public void Calculate_Total_Sum_Test()
+        {
+            int range = 15;
+            long expected = 26;
 
-        //    int total = ThousandFibNumber.SumUpEvenFib(range);
+            int total = PowerDigitSum.TotalSum(range);
 
-        //    Assert.That(total, Is.EqualTo(expected));
-        //}
+            Assert.That(total, Is.EqualTo(expected));
+        }
     }
 }

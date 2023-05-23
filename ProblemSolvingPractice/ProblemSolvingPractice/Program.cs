@@ -8,39 +8,39 @@ internal class Program
 {
     private static async Task Main(string[] args)
     {
-        string url = "https://jsonplaceholder.typicode.com/posts";
-        HttpClient client = new HttpClient();
+        //string url = "https://jsonplaceholder.typicode.com/posts";
+        //HttpClient client = new HttpClient();
 
-        try
-        {
-            var response = await client.GetAsync(url);
-            var responseMessage = await response.Content.ReadAsStringAsync();
+        //try
+        //{
+        //    var response = await client.GetAsync(url);
+        //    var responseMessage = await response.Content.ReadAsStringAsync();
 
-            var comments = JsonConvert.DeserializeObject<Posts[]>(responseMessage);
+        //    var comments = JsonConvert.DeserializeObject<Posts[]>(responseMessage);
           
-            if (comments != null)
-            {
-                Array.Reverse(comments);
+        //    if (comments != null)
+        //    {
+        //        Array.Reverse(comments);
                
-                Array.Sort(comments, (a, b) => (a.CompareTo(b)));
-                foreach (var item in comments)
-                {
-                    Console.WriteLine(item.UserId  + " " + item.Title);
-                }
-            }
+        //        Array.Sort(comments, (a, b) => (a.CompareTo(b)));
+        //        foreach (var item in comments)
+        //        {
+        //            Console.WriteLine(item.UserId  + " " + item.Title);
+        //        }
+        //    }
             
-        }
-        catch (Exception e)
-        {
+        //}
+        //catch (Exception e)
+        //{
 
-           Console.WriteLine(e.Message);
-        }
-        finally
-        {
-            client.Dispose();
-        }
-        int n = 15;
-        Console.WriteLine(PowerDigitSum.TotalPower(n));
+        //   Console.WriteLine(e.Message);
+        //}
+        //finally
+        //{
+        //    client.Dispose();
+        //}
+        int n = 1000;
+        Console.WriteLine(PowerDigitSum.TotalSum(n));
         Console.ReadLine();
     }
 }

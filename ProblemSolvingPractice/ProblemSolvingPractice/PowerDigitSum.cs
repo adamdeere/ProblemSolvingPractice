@@ -18,5 +18,18 @@ namespace ProblemSolvingPractice
 
             return result;
         }
+
+        public static int TotalSum(int power) 
+        {
+            BigInteger result = TotalPower(power);
+
+            char[] resultArray = result.ToString().ToCharArray();
+            int finalResult = 0;
+            for (int i = 0; i < resultArray.Length; i++)
+            {
+                finalResult += int.Parse(resultArray[i].ToString());
+            }
+            return finalResult;
+        }
     }
 }
