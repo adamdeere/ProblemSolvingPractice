@@ -22,7 +22,7 @@ namespace ProblemSolvingTests
             int range = 3;
             long expected = 12;
 
-            int total = test.SumUpEvenFib(range);
+            int total = ThousandFibNumber.SumUpEvenFib(range);
 
             Assert.That(total, Is.EqualTo(expected));
         }

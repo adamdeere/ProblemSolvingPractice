@@ -39,9 +39,8 @@ internal class Program
         {
             client.Dispose();
         }
-        ThousandFibNumber m = new ThousandFibNumber();
-        int n = 100;
-        Console.WriteLine(m.SumUpEvenFib(3));
+        int n = 1000;
+        Console.WriteLine(ThousandFibNumber.SumUpEvenFib(n));
         Console.ReadLine();
     }
 }
