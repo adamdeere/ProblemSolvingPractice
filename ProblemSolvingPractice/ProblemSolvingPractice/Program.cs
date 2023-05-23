@@ -39,8 +39,8 @@ internal class Program
         {
             client.Dispose();
         }
-        int n = 1000;
-        Console.WriteLine(ThousandFibNumber.SumUpEvenFib(n));
+        int n = 15;
+        Console.WriteLine(PowerDigitSum.TotalPower(n));
         Console.ReadLine();
     }
 }
