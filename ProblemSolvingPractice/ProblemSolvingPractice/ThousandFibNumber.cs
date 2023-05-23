@@ -11,28 +11,22 @@ namespace ProblemSolvingPractice
     {
         public static int SumUpEvenFib(int maxValue)
         {
-            BigInteger next = 0;
+            BigInteger next = 1;
             BigInteger prev = 0;
             int index = 1;
-            
-            while (next.ToString().Length < maxValue)
+            if (maxValue > 0)
             {
-             
-                if (next == 0)
-                {
-                    next = 1;
-                }
-                else
+                while (next.ToString().Length < maxValue)
                 {
                     // sum up the next fib term
                     BigInteger temp = next;
-                    
+
                     next += prev;
                     prev = temp;
                     index += 1;
                 }
-             
             }
+           
 
             return index;
         }
