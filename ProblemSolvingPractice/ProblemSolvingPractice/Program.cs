@@ -39,9 +39,9 @@ internal class Program
         {
             client.Dispose();
         }
-        FactorialDigitSum m = new FactorialDigitSum();
+        ThousandFibNumber m = new ThousandFibNumber();
         int n = 100;
-        Console.WriteLine(m.FindSumOfDigits(n));
+        Console.WriteLine(m.SumUpEvenFib(3));
         Console.ReadLine();
     }
 }
