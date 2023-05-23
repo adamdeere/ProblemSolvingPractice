@@ -17,7 +17,7 @@ namespace ProblemSolvingTests
         }
 
         [Test]
-        public void Calculate_Total_Score_Test()
+        public void Calculate_Total_Index_Test()
         {
             int range = 3;
             long expected = 12;
