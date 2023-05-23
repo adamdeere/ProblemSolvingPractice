@@ -1,0 +1,172 @@
+﻿One	
+Two
+Three	
+Four
+Five	
+Six
+Seven	
+Eight
+Nine	
+Ten
+Eleven	
+Twelve
+Thirteen	
+Fourteen
+Fifteen	
+Sixteen
+Seventeen	
+Eighteen
+Nineteen	
+Twenty
+Twenty one
+Twenty two
+Twenty three
+Twenty four
+Twenty five
+Twenty six
+Twenty seven	
+Twenty eight
+Twenty nine	    
+Thirty
+Thirty one	    
+Thirty two
+Thirty three	
+Thirty four
+Thirty five	    
+Thirty-six
+Thirty seven	
+Thirty eight
+Thirty nine	
+Forty
+Forty one	
+Forty two
+Forty three	
+Forty four
+Forty five	
+Forty six
+Forty seven	
+Forty eight
+Forty nine	
+Fifty
+Fifty one	
+Fifty two
+Fifty three	
+Fifty four
+Fifty five	
+Fifty six
+Fifty seven	
+Fifty eight
+Fifty nine	
+Sixty
+Sixty one	
+Sixty two
+Sixty three	
+Sixty four
+Sixty five	
+Sixty six
+Sixty seven	
+Sixty eight
+Sixty nine	
+Seventy
+Seventy one	
+Seventy two
+Seventy three	
+Seventy-four
+Seventy-five	
+Seventy-six
+Seventy-seven	
+Seventy-eight
+Seventy-nine	
+Eighty
+Ninety	
+One hundred
+One hundred and ten	    
+One hundred and twenty
+One hundred and thirty	
+One hundred and forty
+One hundred and fifty	
+One hundred and sixty
+One hundred and seventy
+One hundred and eighty
+One hundred and ninety	
+Two hundred
+Two hundred and ten	    
+Two hundred and twenty
+Two hundred and thirty	
+Two hundred and forty
+Two hundred and fifty	
+Two hundred and sixty
+Two hundred and seventy
+Two hundred and eighty
+Two hundred and ninety
+Three hundred 
+Three hundred and ten	   
+Three hundred and twenty
+Three hundred and thirty	
+Three hundred and forty
+Three hundred and fifty	
+Three hundred and sixty
+Three hundred and seventy	
+Three hundred and eighty
+Three hundred and ninety	
+Four hundred
+Four hundred and ten	   
+Four hundred and twenty
+Four hundred and thirty	
+Four hundred and forty
+Four hundred and fifty	
+Four hundred and sixty
+Four hundred and seventy	
+Four hundred and eighty
+Four hundred and ninety	
+Five hundred
+Five hundred and ten	    
+Five hundred and twenty
+Five hundred and thirty	
+Five hundred and forty
+Five hundred and fifty	    
+Five hundred and sixty
+Five hundred and seventy	
+Five hundred and eighty
+Five hundred and ninety	
+Six hundred
+Six hundred and ten	    
+Six hundred and twenty
+Six hundred and thirty	
+Six hundred and forty
+Six hundred and fifty	    
+Six hundred and sixty
+Six hundred and seventy	
+Six hundred and eighty
+Six hundred and ninety	    
+Seven hundred
+Seven hundred and ten	    
+Seven hundred and twenty
+Seven hundred and thirty	
+Seven hundred and forty
+Seven hundred and fifty	
+Seven hundred and sixty
+Seven hundred and seventy	
+Seven hundred and eighty
+Seven hundred and ninety	
+Eight hundred
+Eight hundred and ten	
+Eight hundred and twenty
+Eight hundred and thirty	
+Eight hundred and forty
+Eight hundred and fifty
+Eight hundred and sixty
+Eight hundred and seventy	
+Eight hundred and eighty
+Eight hundred and ninety
+Nine hundred
+Nine hundred and ten	
+Nine hundred and twenty
+Nine hundred and thirty	
+Nine hundred and forty
+Nine hundred and fifty
+Nine hundred and sixty
+Nine hundred and seventy	
+Nine hundred and eighty
+Nine hundred and ninety
+One thousand
