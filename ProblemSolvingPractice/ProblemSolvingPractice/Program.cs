@@ -40,7 +40,7 @@ internal class Program
         //    client.Dispose();
         //}
         int n = 1000;
-        Console.WriteLine(PowerDigitSum.TotalSum(n));
+        Console.WriteLine(NumberWang.CalculateNumberLetterCount("Files/numberWang.txt"));
         Console.ReadLine();
     }
 }
